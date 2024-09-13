@@ -40,6 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const checkbox 
     = document.querySelector("#loginForm input[name=saveEmail]");
 
+  // 로그인 상태인 경우 함수 종료
+  if(memberEmail == null) return;
+
   // 이메일 입력란에 저장된 이메일 출력
   memberEmail.value = saveEmail;
 
